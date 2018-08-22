@@ -38,6 +38,7 @@
 				<th>English</th>
 				<th>Filipino</th>
 				<th>MAPEH</th>
+				<th>Weighted Ave.</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -54,6 +55,12 @@
 				<td><?php echo $stdnt->English;?></td>
 				<td><?php echo $stdnt->Filipino;?></td>
 				<td><?php echo $stdnt->Mapeh;?></td>
+				<td><?php echo 
+
+				$wtd_grd = ($stdnt->English*(1.2/100)) + ($stdnt->Math*(1.5/100)) + ($stdnt->Science*(1.8/100)) + ($stdnt->Filipino*(1.2/100)) + ($stdnt->Mapeh* (0.8/100));
+				echo ($wtd_grd/6.5);
+
+				?></td>
 				<td>
 					<a href="<?php echo base_url('gradingsys/edit/'. $stdnt->id) ?>" class ="btn btn-info">
 						Edit
