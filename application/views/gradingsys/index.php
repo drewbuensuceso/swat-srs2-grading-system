@@ -57,8 +57,7 @@
 				<td><?php echo $stdnt->Mapeh;?></td>
 				<td><?php echo 
 
-				$wtd_grd = ($stdnt->English*(1.2/100)) + ($stdnt->Math*(1.5/100)) + ($stdnt->Science*(1.8/100)) + ($stdnt->Filipino*(1.2/100)) + ($stdnt->Mapeh* (0.8/100));
-				echo ($wtd_grd/6.5);
+				(($stdnt->English*.012) + ($stdnt->Math*.015) + ($stdnt->Science*.018) + ($stdnt->Filipino*.012) + ($stdnt->Mapeh*.008)) /6.5 * 100;
 
 				?></td>
 				<td>
