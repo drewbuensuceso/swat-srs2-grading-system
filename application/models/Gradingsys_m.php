@@ -45,7 +45,12 @@ class Gradingsys_m extends CI_Model{
 		$field = array(
 			'prof_id' => $this->input->post('prof_id'),
 			'first_name' => $this->input->post('first_name'),
-			'last_name' => $this->input->post('last_name')
+			'last_name' => $this->input->post('last_name'),
+			'Math' => $this->input->post('Math'),
+			'Science' => $this->input->post('Science'),
+			'English' => $this->input->post('English'),
+			'Filipino' => $this->input->post('Filipino'),
+			'Mapeh' => $this->input->post('Mapeh'),
 		);
 		$this->db->where('id', $id);
 		$this->db->update('student', $field);
