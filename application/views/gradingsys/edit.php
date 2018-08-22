@@ -20,6 +20,36 @@
 		<div class = "col-md-10">
 			<input type="text" value = "<?php echo $students->last_name;?>" name="last_name" required>
 		</div>
+	</div>
+		<div class = "form-group">
+		<label for="Math" class="col-md-2 text-right">Math</label>
+		<div class = "col-md-10">
+			<input type="number" value = "<?php echo $students->Math;?>" name="Math">
+		</div>
+	</div>
+	<div class = "form-group">
+		<label for="Science" class="col-md-2 text-right">Science</label>
+		<div class = "col-md-10">
+			<input type="number" value = "<?php echo $students->Science?>" name="Science">
+		</div>
+	</div>
+	<div class = "form-group">
+		<label for="English" class="col-md-2 text-right">English</label>
+		<div class = "col-md-10">
+			<input type="number" value = "<?php echo $students->English;?>" name="English">
+		</div>
+	</div>
+	<div class = "form-group">
+		<label for="Filipino" class="col-md-2 text-right">Filipino</label>
+		<div class = "col-md-10">
+			<input type="number" value = "<?php echo $students->Filipino;?>" name="Filipino">
+		</div>
+	</div>
+	<div class = "form-group">
+		<label for="Mapeh" class="col-md-2 text-right">MAPEH</label>
+		<div class = "col-md-10">
+			<input type="number" value = "<?php echo $students->Mapeh;?>"name="Mapeh">
+		</div>
 	</div>	
 	<div class = "form-group">
 		<label class="col-md-2 text-right"></label>

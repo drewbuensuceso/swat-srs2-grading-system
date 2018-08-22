@@ -23,7 +23,7 @@
 		</div>
 	</div>
 	<div class="container">
-		<H3><span class= "glyphicon glyphicon-menu-down"></span>My Class Students</H3>
+		<H3><span class= "glyphicon glyphicon-menu-down"></span>Student Grades</H3>
 		<a href="<?php echo base_url('gradingsys/add') ?>" class ="btn btn-primary">Add new student</a>
 
 
@@ -33,7 +33,11 @@
 				<td>ID</td>
 				<th>Last Name</th>
 				<th>First Name</th>
-				<th>Action</th>
+				<th>Math</th>
+				<th>Science</th>
+				<th>English</th>
+				<th>Filipino</th>
+				<th>MAPEH</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -45,6 +49,11 @@
 				<td><?php echo $stdnt->id;?></td>
 				<td><?php echo $stdnt->last_name;?></td>
 				<td><?php echo $stdnt->first_name;?></td>
+				<td><?php echo $stdnt->Math;?></td>
+				<td><?php echo $stdnt->Science;?></td>
+				<td><?php echo $stdnt->English;?></td>
+				<td><?php echo $stdnt->Filipino;?></td>
+				<td><?php echo $stdnt->Mapeh;?></td>
 				<td>
 					<a href="<?php echo base_url('gradingsys/edit/'. $stdnt->id) ?>" class ="btn btn-info">
 						Edit
